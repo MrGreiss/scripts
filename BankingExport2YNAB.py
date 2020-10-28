@@ -6,9 +6,90 @@ def try_to_match_Payee(memo):
     known_payees = \
         {"BENZINA*": "Beznina",
          "NETFLIX.COM": "Netflix",
+         "CSOB": "CSOB",
          "VODAFONE CZECH REP": "Vodafon",
          "Alza.cz a.s": "Alza.cz",
          "VOYO": "Voyo.sk",
+         "Revolut": "Revolut",
+         "MPLA.CZ": "MPLA (Parkovani)",
+         "OMV": "OMV",
+         "NESPRESSO": "Nespresso",
+         "GENTLEMAN STORE": "Gentleman Store",
+         "NOTINO": "Notino",
+         "sazka.cz": "Sazka",
+         "MCDONALD": "McDonalds",
+         "GROSSETO": "Grosseto",
+         "BISTRO SLECHTOVKA": "Bistro Slechtovka",
+         "Parkovaci kasy": "Parkovani",
+         "BENZINA": "Benzina",
+         "SHZ CESKY KRUMLOV": "Hrad Cesky Krumlov",
+         "APPLE": "Apple",
+         "KFC": "KFC",
+         "GELATO PRAGA": "Gelato Praga",
+         "PH": "Pizza Hut",
+         "Candy Bull": "Candy Bull",
+         "Tesco": "Tesco",
+         "YouTubePremium": "Youtube",
+         "TEDOS Mikulov": "Parkovani",
+         "Aquapark Moravia": "Aqualand Moravia",
+         "AQUALAND": "Aqualand Moravia",
+         "ALBERT": "Albert",
+         "GENTLEMEN BROTHERS": "Gentleman Brothers",
+         "NOVY SMICHOV": "OC Novy Smichov",
+         "MC DONALDS": "McDonalds",
+         "PARKING MEDVEDI": "Parkovani",
+         "FABERA SYSTEMS": "Fabera Systems",
+         "AQUA PARK SPINDLERUV": "Aquapark Spindleruv mlyn",
+         "Lanova draha Svaty Pet": "Lanovka Spindleruv Mlyn",
+         "TWISTO": "Twisto",
+         "McDonald": "McDonalds",
+         "Kytky od Pepy": "Kytky od Pepy",
+         "RBCZ": "Raiffeisenbank",
+         "Transakcni poplatek": "CSOB",
+         "HOTEL SKALNI MLYN": "Hotel Skalni Mlyn",
+         "KAVARNA V MYSLIVNE": "Kavarna v Myslivne",
+         "Billa": "Billa",
+         "YOUTUBEPREMIUM": "Youtube Premium",
+         "CENTRUM STROMOVKA": "Centrum Stromovka",
+         "PVA": "PVA expo",
+         "Damejidlo": "Damejidlo",
+         "Amazon Video": "Amazon",
+         "SPRAVA JESKYNI": "Sprava Jenskyni CR",
+         "HOTEL INTERNATIO": " Hotel International",
+         "BEER TRUCK": "Beer Truck",
+         "MESTSKA PLOVARNA": "Mestska Plovarna Luhacovice",
+         "RESTAURACE - PIZZERIE, LUHACOVICE": "Rimini",
+         "BUFET POD VYHLIDKOU": "Bufet pod Vyhlidkou",
+         "MIRONET": "Mironet",
+         "Booking.com": "Booking.com",
+         "damejidlo": "Damejidlo",
+         "SUNNYSOFT": "Sunny soft",
+         "RESTAURACE SOKOLI": "Restaurace Sokoli",
+         "EZUP": "Ezup",
+         "RELAY": "Relay",
+         "EMOTION PARK": "E-motion",
+         "DM DROGERIE": "Dm Drogerie",
+         "adidas": "Adidas",
+         "MAKRO": "Makro",
+         "FOOT LOCKER": "Foot Locker",
+         "KYTKY EVROPSKA": "Kytky od Pepi",
+         "DATART": "Datart",
+         "IKEA": "Ikea",
+         "MOL": "Mol"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          }
     payee_found = None
     for payee in known_payees:
@@ -57,8 +138,16 @@ with open(sys.argv[1], 'r', encoding=inputFileEncoding) as infile, open(outputFi
     for row in reader:
         outrow = {}
         for inkey, outkey in columnMapping:
-            if outkey is "Payee":
+            if outkey is "Payee" and len(row['poznámka']) > 0 and len(row['číslo účtu protiúčtu']) == 0:
                 outrow.update({outkey: try_to_match_Payee(row["poznámka"])})
             else:
-                outrow.update({outkey: row[inkey]})
+                if outkey is "Memo" and len(row['poznámka']) > 0:
+                    memo = row[inkey]
+                    if "Místo" in memo:
+                        memo = memo.split("Místo:", 2)[1]
+                        outrow.update({outkey: memo})
+                    else:
+                        outrow.update({outkey: row[inkey]})
+                else:
+                    outrow.update({outkey: row[inkey]})
         writer.writerow(outrow)
