@@ -75,7 +75,15 @@ def try_to_match_Payee(memo):
          "KYTKY EVROPSKA": "Kytky od Pepi",
          "DATART": "Datart",
          "IKEA": "Ikea",
-         "MOL": "Mol"
+         "MOL": "Mol",
+         "Pizza Bustehrad": "Pizza Bustehrad",
+         "PRAGUE ON STREET PARKING": "MPLA (Parkovani)",
+         "Alza, Praha": "Alza.cz",
+         "GETBIZODNE.COM, DECIN": "GETBIZODNE.COM",
+         "EPIC GAMES STORE": "Epic Game store",
+
+
+
 
 
 
