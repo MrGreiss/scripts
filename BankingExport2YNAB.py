@@ -81,6 +81,13 @@ def try_to_match_Payee(memo):
          "Alza, Praha": "Alza.cz",
          "GETBIZODNE.COM, DECIN": "GETBIZODNE.COM",
          "EPIC GAMES STORE": "Epic Game store",
+         "BOZI DAR 199": "Parkoviste Bozi Dar",
+         "CUP AND CAKE": "Cup&Cake",
+         "RESTAURANT JESTED": "Restaurace Jested",
+         "CZC": "CZC.cz",
+
+
+
 
 
 
