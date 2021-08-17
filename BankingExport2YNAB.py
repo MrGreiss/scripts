@@ -27,7 +27,7 @@ def try_to_match_Payee(memo):
          "KFC": "KFC",
          "GELATO PRAGA": "Gelato Praga",
          "PH": "Pizza Hut",
-         "Candy Bull": "Candy Bull",
+         "CANDYBULL": "Candy Bull",
          "Tesco": "Tesco",
          "YouTubePremium": "Youtube",
          "TEDOS Mikulov": "Parkovani",
@@ -133,6 +133,34 @@ def try_to_match_Payee(memo):
          "LAZENSKA KAVA": "Lazenska kava luhacovice",
          "TRAVELLAB": "TravelLab",
          "U Provaznice": "U Provaznice",
+         "GOPAY  *TAMAZPET.COM, tamazpet.com": "Tam a Zpet",
+         "NC KVILDA PARKOVISTE": "NC Kvilda Parkoviste",
+         "REKOLA": "Rekola",
+         "GASTRO - WC MEDVEDIN": "WC Medvedin",
+         "IGLOO BAR": "Igloo bar",
+         "Lanova draha Hromovka": "Lanova draha Hromovka",
+         "SP.M. PARKING": "Parking Hromovka",
+         "POKLADNA UVN": "UVN",
+         "Qerko": "Qerko",
+         "FAME STYLE AGENCY": "Institut zdravych vlasu",
+         "PIVOVAR LADVI COBOLIS": "Pivovar cobolis",
+         "GOPAY * O2": "O2",
+         "Alza, Prague": "Alza.cz",
+         "GELATO CAFE": "Gelato cafe",
+         "PLZENSKA 233/8": "Plzenska 238/8",
+         "FRESHCUP": "Mamas bakery",
+         "LA ZmrZka": "La Zmrzka",
+         "gopass": "GoPass",
+         "Foot Locker": "Foot Locker"
+
+
+
+
+
+
+
+
+
 
 
 
