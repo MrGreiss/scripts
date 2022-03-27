@@ -82,9 +82,9 @@ def try_to_match_Payee(memo):
          "GETBIZODNE.COM, DECIN": "GETBIZODNE.COM",
          "EPIC GAMES STORE": "Epic Game store",
          "BOZI DAR 199": "Parkoviste Bozi Dar",
-         "CUP AND CAKE": "Cup&Cake",
+         "Cup And Cake": "Cup&Cake",
          "RESTAURANT JESTED": "Restaurace Jested",
-         "CZC": "CZC.cz",
+         "czc.cz": "CZC.cz",
          "www.speedlo.cz": "Speedlo.cz",
          "DECATHLON PRAHA": "Decathlon",
          "FORBES.CZ": "Forbes",
@@ -148,10 +148,125 @@ def try_to_match_Payee(memo):
          "Alza, Prague": "Alza.cz",
          "GELATO CAFE": "Gelato cafe",
          "PLZENSKA 233/8": "Plzenska 238/8",
-         "FRESHCUP": "Mamas bakery",
+         "FreshCup": "Mamas bakery",
          "LA ZmrZka": "La Zmrzka",
          "gopass": "GoPass",
-         "Foot Locker": "Foot Locker"
+         "Foot Locker": "Foot Locker",
+         "SKYLINK": "Skylink.cz",
+         "ANTONINOVO PEKARSTVI": "Antoninovo Pekarstvi",
+         "Mc Donald": "McDonalds",
+         "CSAD KLADNO": "CSAD Kladno",
+         "PARKOVANI FN MOTOL": "Parkovani FN Motol",
+         "MOTOL CAFE": "Motol Cafe",
+         "www.cd.cz": "Ceske Drahy",
+         "Decathlon": "Decathlon",
+         "Intersport": "Intersport",
+         "BK Praha ": "Burger King",
+         "SANI": "Sani",
+         "KAFE U ZLABU": "Kafe u Zlabu",
+         "TENISOVY KLUB SPORT": "Tenisovy klub luziny",
+         "SENYUM CLINIC": "Senyum clinic",
+         "KE KOPANINE, TUCHOMERICE": "Go Tank",
+         "PLAYSTATIONNETWORK": "Playstation e-shop",
+         "BEZKEMPU.CZ": "BezKempu.cz",
+         "KB ATM": "KB",
+         "T-MOBILE": "T-Mobile",
+         "KYTKY U ANDELA": "Kytky od Pepy",
+         "360PIZZA": "360 Pizza",
+         "www.liftago.com": "Lifttago",
+         "LEGENDA RESTAURACE": "Legenda",
+         "LEGENDA MUSIC": "Legenda",
+         "VERY GOODIES": "Very Goodies",
+         "Lidl": "Lidl",
+         "PAUL": "Paul",
+         "AUTO STODULKY": "Volvo servis",
+         "UBER": "Uber",
+         "PARKOVACI DUM RYCHTAR, PLZEN": "Parkovaci dum rychtar, Plzen",
+         "CROSSWALK BARBER": "Crosswalk barber",
+         "CHATA U SLONA": "Chata u Slona",
+         "CINEMA CITY": "CinemaCity",
+         "GLOBUS": "Globus",
+         "Ptakoviny": "Ptakoviny",
+         "KNEDLIN": "Knedlin",
+         "AOS CZECH": "Apple",
+         "WWW.ISPACE.CZ": "Samsung",
+         "amazingplaces": "Amazing Places",
+         "DISKARD": "STK-Diskard",
+         "Cre8shop": "Cre8",
+         "Globus": "Globus",
+         "Creative cut": "Creative cut",
+         "CZC.CZ": "CZC.cz",
+         "KARLOK SRO": "Lokal",
+         "THE PUB": "The Pub",
+         "ASPIRA": "Aspira Cafe",
+         "GOODSAILORS": "Ceske parky",
+         "SB Avion Park": "Starbucks",
+         "Penny": "Penny",
+         "OPTIKSTUDIOJANACIZKOV": "Optik Studio Jana Cizkova",
+         "CS, CERNOHORSKA": "Ceska Sporitelna",
+         "go.ticketportal": "TicketPortal",
+         "PARKOVISTE SLUNECNA": "Parkoviste slunecna (Prasily)",
+         "PIZZERIA PALATINO": "Pizzeria Palatino",
+         "cinemacity.cz": "CinemaCity",
+         "PRODEJNA ARKO": "Arko",
+         "Fresh Point": "Sklizeno",
+         "PARKOVISTE KLD 2": "Skiareal Cerna Hora",
+         "MEGA PLUS SPODNI STA, JANSKE LAZNE": "Skiareal Cerna Hora",
+         "Cup and Cake": "Cup&Cake",
+         "RESTAURACE TRIFOT": "Trifot",
+         "Amitabh Enterprises": "Bombay Express",
+         "SBX Praha": "Starbucks",
+         "NC SRNI PARKOVISTE": "Parkoviste Srni",
+         "OH DEER BAKERY": "Oh Deer Bakery",
+         "SV KATERINA": "Shell",
+         "AMLOK, LOKAL": "Lokal",
+         "MARTHYpyro": "MarthyPyro",
+         "PARKOVISTE  KAPKA, BOZI DAR": "Parkoviste Bozi Dar",
+         "Pivovar Ladvi COBOLIS": "Pivovar cobolis",
+         "bezrealitky": "Bezrealitky.cz",
+         "Restaurace Stadion": "Restaurace stadion",
+         "School Svaty Petr": "SkolMax",
+         "Shop/rental LD Svaty": "Pujcovna sv. Petr",
+         "Senyum clinic": "Senyum clinic",
+         "Ruzyne SAL": "Salomon",
+         "nextbike": "Nextbike",
+         "RIP CURL": "RipCurl",
+         "2P33 PEAK PERFORMANC": "Peak Performance",
+         "AQUAPALACE PRAHA": "Aquapalace",
+         "RPM SERVICE": "RPM Service"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
