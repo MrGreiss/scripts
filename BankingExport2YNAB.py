@@ -233,7 +233,24 @@ def try_to_match_Payee(memo):
          "RIP CURL": "RipCurl",
          "2P33 PEAK PERFORMANC": "Peak Performance",
          "AQUAPALACE PRAHA": "Aquapalace",
-         "RPM SERVICE": "RPM Service"
+         "RPM SERVICE": "RPM Service",
+         "PIZZERIE FRANCESCO": "Pizzerie Francesco",
+         "ESHOPWORLD ABERCROMBIE": "Abercrombie",
+         "REGAL BURGER": "Regal Burger",
+         "CZREDCROSS": "Cerveny Kriz",
+         "Ralph Lauren": "Ralph Lauren",
+         "RESTAURACE HARLEQUIN": "Restaurace Harlequin",
+         "MEGAPIXEL": "Megapixel",
+         "Hlubina Senkyrna": "Senkyrna",
+         "LIBERSKE LAHUDKY": "Liberske Lahudky",
+         "WWW.F1.COM": "F1 pro",
+         "SumUp  *Photoplace, Usti nad Lab": "fotokoutek Usti",
+         "BANDI VAMOS": "Bandi",
+         "VERMONT OUTLET": "Vermont outlet",
+
+
+
+
 
 
 
