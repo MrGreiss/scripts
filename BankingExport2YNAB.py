@@ -247,6 +247,24 @@ def try_to_match_Payee(memo):
          "SumUp  *Photoplace, Usti nad Lab": "fotokoutek Usti",
          "BANDI VAMOS": "Bandi",
          "VERMONT OUTLET": "Vermont outlet",
+         "CS, DR. VESELEHO": "Ceska Sporitelna",
+         "STEAMGAMES": "Steam",
+         "revolutie": "Revolut",
+         "PARKOVISTE PUSTEVNY": "Pustevny parkoviste",
+         "14-15 BATUV INSTITUT": "Batuv Institut",
+         "COFFEESHOP": "Coffee shop zlin",
+         "SPARRING POINT": "Sparring point",
+         "PADDLE.NET*LUNAR": "Lunar",
+         "TSBOHEMIA": "TsBohemia.cz",
+         "Cukrarna Pekny Kastan": "Creme de la Creme",
+         "PROSPANEK": "ProSpanek",
+
+
+
+
+
+
+
 
 
 
