@@ -258,6 +258,32 @@ def try_to_match_Payee(memo):
          "TSBOHEMIA": "TsBohemia.cz",
          "Cukrarna Pekny Kastan": "Creme de la Creme",
          "PROSPANEK": "ProSpanek",
+         "OBCERSTVENI SLALOM": "Obcerstveni Slalom",
+         "EMAMASO SRO": "Nase Maso",
+         "BK Metropole Zlicin": "Burger King",
+         "RESTAURACE VE STINU": "Restaurace ve stinu lipy",
+         "ZOO ZAJEZD": "Zoo Zajezd",
+         "COMGATE": "Mmo Boost",
+         "Alza": "Alza.cz",
+         "CZC": "CZC.cz",
+         "SELSKA BASTA": "Selska Basta",
+         "RESTAURACE U PRAMENE": "Restaurace u Pramene",
+         "Delikatesky s.r.o": "Delikatesky",
+         "SIMULATION OF REALITY": "Simulation of Reality",
+         "Disney Plus": "Disney Plus",
+         "Bombay Express": "Bombay Express",
+         "LESS MESS STORAGE": "Less Mess Storage",
+         "ABERCROMBIE": "Abercrombie",
+         "OBI": "OBI",
+         "MMB": "Moneta Money Bank",
+
+
+
+
+
+
+
+
 
 
 
