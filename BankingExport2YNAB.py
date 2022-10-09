@@ -276,6 +276,55 @@ def try_to_match_Payee(memo):
          "ABERCROMBIE": "Abercrombie",
          "OBI": "OBI",
          "MMB": "Moneta Money Bank",
+         "CS, VANICKOVA": "Ceska Sporitelna",
+         "HOTEL KRAKONOS": "Hotel Krakonos",
+         "PEPCO": "Pepco",
+         "BOLT.EU": "Bolt",
+         "AMICI": "AMICI",
+         "CUKRARNA HAJEK": "Cukrarna Hajek",
+         "PlaystationNetwork": "Playstation e-shop",
+         "Fame style agency": "Institut zdravych vlasu",
+         "POKLADNY VYSTUP AQUA, PASOHLAVKY": "Aqualand Moravia",
+         "Kozlovna U dvou kocek": "Kozlovna",
+         "CY BRNO HOTEL": "Marriot hotel Brno",
+         "PAPIRNICTVI": "Papirnictvi",
+         "ONO": "ONO",
+         "Lekarna Dr.Max": "Dr.Max",
+         "AS Superwash Unhost": "AS Superwash",
+         "POKLADNY VSTUP AQUAL": "Aqualand Moravia",
+         "qerko.com, Praha 5": "Mia famiglia",
+         "TRAFIKA-JAN KOVARIK": "Other",
+         "Casa Havana": "Casa Havana",
+         "GEMUSE CORNER KEBAB": "Gemuse Corner Kebab",
+         "FOODWAY CATERING": "Foodway catering",
+         "PALUBY VOZU CESKYCH D": "Restaurace Ceske Drahy",
+         "DELIKOMAT": "Delikomat",
+         "Bistro@Cafe": "Other",
+         "SB Dejvicka": "Starbucks",
+         "Manes restaurant": "Gromm",
+         "(a)void floating galle, Praha": "(a)void floating galle",
+         "ELECTRO WORLD": "Electro World",
+         "OREA CONGRESS HOTEL": "Orea Hotel",
+         "PARKOVISTE GERLOVA": "Parkovani",
+         "Wolt": "Wolt",
+         "Safir": "Safir",
+         "HOTELTIME": "Booking.com",
+         "BEI DAI HE": "Cina (jidlo)",
+         "KOURIMLEVNE": "Kourimlevne.cz",
+         "SPORT HOTEL PRASILY": "Sport Hotel Prasily",
+         "PILOK": "Pilok",
+         "BUFET, PRAHA 8": "Buget - Karlin",
+         "SANASPORT": "Sana sport",
+         "CENTRUM FOTOSKODA": "Fotoskoda",
+
+
+
+
+
+
+
+
+
 
 
 
@@ -395,7 +444,7 @@ elif "pohyby" in sys.argv[1]:
     columnMapping = (
     ("datum zaúčtování", "Date"), ("částka", "Outflow"), ("částka", "Inflow"), ("název účtu protiúčtu", "Payee"),
     ("poznámka", "Memo"))
-    inputFileEncoding = "cp1250"
+    inputFileEncoding = "utf-8"
     outputFileName = "ynab_csob.csv"
     trimIntro(sys.argv[1], inputFileEncoding)
 else:
