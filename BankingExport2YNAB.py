@@ -316,6 +316,10 @@ def try_to_match_Payee(memo):
          "BUFET, PRAHA 8": "Buget - Karlin",
          "SANASPORT": "Sana sport",
          "CENTRUM FOTOSKODA": "Fotoskoda",
+         "MAGISTRAT HL M PRAHA": "Magistrat Praha",
+         "Nájem - hadovka": "Nájem - hadovka",
+
+
 
 
 
@@ -442,8 +446,8 @@ if sys.argv[1].startswith("airbank"):
     outputFileName = "ynab_airbank.csv"
 elif "pohyby" in sys.argv[1]:
     columnMapping = (
-    ("datum zaúčtování", "Date"), ("částka", "Outflow"), ("částka", "Inflow"), ("název účtu protiúčtu", "Payee"),
-    ("poznámka", "Memo"))
+    ("dattum zaúčování", "Date"), ("částka", "Outflow"), ("částka", "Inflow"), ("název protiúčtu", "Payee"),
+    ("zpráva", "Memo"))
     inputFileEncoding = "utf-8"
     outputFileName = "ynab_csob.csv"
     trimIntro(sys.argv[1], inputFileEncoding)
@@ -461,10 +465,10 @@ with open(sys.argv[1], 'r', encoding=inputFileEncoding) as infile, open(outputFi
     for row in reader:
         outrow = {}
         for inkey, outkey in columnMapping:
-            if outkey is "Payee" and len(row['poznámka']) > 0 and len(row['číslo účtu protiúčtu']) == 0:
-                outrow.update({outkey: try_to_match_Payee(row["poznámka"])})
+            if outkey is "Payee" and len(row['zpráva']) > 0 and len(row['název protiúčtu']) == 0 and len(row['číslo protiúčtu']) == 0:
+                outrow.update({outkey: try_to_match_Payee(row["zpráva"])})
             else:
-                if outkey is "Memo" and len(row['poznámka']) > 0:
+                if outkey is "Memo" and len(row['zpráva']) > 0:
                     memo = row[inkey]
                     if "Místo" in memo:
                         memo = memo.split("Místo:", 2)[1]
